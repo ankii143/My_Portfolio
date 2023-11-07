@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@100;200;500&family=Lexend+Peta:wght@100;200;300&family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,100;1,500;1,800&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+:root{
+    --darkblue: #04a6f7;
+    --white:#fff;
+    --secondary:#b0b0b0;
+
+}
+/* .ftco-navbar-light{
+    background-color: rgba(156, 194, 228, 0.105);
+} */
+
+.text-secondary1{
+    color:var(--secondary);
+}
+.text-light1{
+    color:var(--white);
+}
+.text-justify{
+    text-align: justify;
+}
+.fs-8{
+    font-size: smaller;
+}
+#navbar{
+    position:fixed;
+    width: 100%;
+    top:0px;
+    transition: 0.5s ease-in;
+    /* background-color: #0e213f; */
+    /* box-shadow: 0 0px 2px #04a6f7; */
+}
+.sticky{
+    position:fixed;
+    width: 100%;
+    top:0;
+    transition: 0.5s ease-in;
+    z-index: 100;
+    background-color: #0e213f;
+    /* box-shadow: 0 0px 2px #04a6f7; */
+}
+.btn1:hover{
+    /* color:var(--white); */
+    scale:0.9;
+    transition: 0.5s ease-out;
+}
+.ftco-navbar-light  a{
+    padding:0 5px;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--darkblue);
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 15px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s ease;
+    /* background-color:var(--darkblue); */
+    /* text-shadow: 0 0 3px #04a6f7,
+        0 0 3px #04a6f7,
+        0 0 3px #04a6f7,
+        0 0 3px #0099e6; */
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+    border-bottom: 2px solid var(--darkblue);
+}
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active{
+    border-bottom: 2px solid var(--darkblue);
+}
+
+.type{
+     text-shadow: 0 0 5px #04a6f7,
+        0 0 5px #04a6f7,
+        0 0 5px #04a6f7,
+        0 0 5px #04a6f7,
+        0 0 5px #04a6f7,
+        0 0 5px #0099e6;
+        letter-spacing: 3px;
+}
+.bshadow{
+    box-shadow: 0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #0099e6;
+}
+
+/* home page section--------------------------------------------------------------------------------------- */
+.home1{
+    width:100%;
+    height:120vh;
+    background-image: url('https://getwallpapers.com/wallpaper/full/7/4/8/588859.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+    
+}
+.fs-7{
+    font-size: 12px;
+}
+.left1  .hi {
+    box-shadow: 0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #0099e6;
+}
+
+.left1 button{
+    transition: 0.2s ease-in;
+}
+.left1 button:hover {
+    color:var(--white);
+    transform: translateY(-5px);
+}
+.left1 > p {
+    text-align: justify;
+    font-size: 14px;
+}
+.middle {
+    width:500px;
+    height:400px;
+}
+.middle img{
+    width:100%;
+    /* opacity:0.7; */
+    object-fit:cover;
+}
+.right{
+    position: absolute;
+    width:50px;
+    right:20px;
+    height: 80vh;
+}
+.right i{
+    padding:3px 7px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #0099e6;
+}
+/* home section----------------------------------------------------------------------------- */
+
+/* about section----------------------------------------------------------------------------- */
+.home2{
+    width:100%;
+    height:auto;
+    background-image: url('https://getwallpapers.com/wallpaper/full/1/e/e/6414.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+
+.about1 ,
+.about {
+    position: relative;
+    width: 48%;
+    height: auto;
+    border-radius: 5px;
+}
+.aboutimg > img {
+    width:100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #0099e6;
+    background-color: #000;
+}
+.aboutimg .left_cards{
+    position: absolute;
+    width:500px;
+    height:70vh;
+    top:-22px;
+    left:-52px;
+    /* background: linear-gradient(to left, #0099e671, #fff); */
+}
+.aboutimg .left_cards .card1 {
+    display: flex;
+    justify-content: center;
+    width:70px;
+    height: 70px;
+    border-radius: 3px;
+    margin-top:10px;
+    /* background-color:#0000009b; */
+    background-color:#fff;
+    box-shadow: 0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #0099e6;
+}
+
+.aboutimg .left_cards .card1 img{
+    width:100%;
+    object-fit: contain;
+}
+/* about section --------------------------------------------------------------------------- */
+
+ /* skill section --------------------------------------------------------------------------- */
+.home3{
+    width:100%;
+    height:auto;
+    background-image: url('https://images.wallpaperscraft.com/image/single/gradient_color_blue_155118_1280x720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+.indicate > span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: #0099e661;
+    /* box-shadow: 0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #0099e6; */
+}
+.skillcard .card{
+    box-shadow: 0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #0099e6;
+    background-color: transparent;
+    transition: 0.3s ease-out;
+}
+.skillcard img{
+    width: 160px;
+    height: 160px;
+    padding:10px;
+    background:#ffffffc4;
+    
+}
+.skillcard .card:hover{
+    cursor: pointer;
+    scale: 1.04;
+}
+/* skill section ------------------------------------------------------------------------------- */
+  
+/* project section ------------------------------------------------------------------------------- */
+.home4{
+    width:100%;
+    height:auto;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/988/889/137/simple-gradient-minimalism-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+.projectcard .card{
+    width:350px;
+    background-color: #000;
+    box-shadow: 0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #04a6f7,
+    0 0 3px #0099e6;
+    transition: 0.2s ease-in;
+    border-radius: 12px;
+}
+.projectcard .card img {
+    position: relative;
+    height:200px;
+    object-fit: fill;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.projectcard a:nth-child(2){
+    padding-bottom:0;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--darkblue);
+}
+.projectcard .card .hoverinfo{
+    position: absolute;
+    height:200px;
+    width:342px;
+    background:  #0e213fea;
+    z-index:1;
+    scale: 0.5;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    border-radius: 12px;
+}
+.projectcard .card:hover .hoverinfo{
+    scale: 1;
+    opacity: 1;
+}
+.projectcard .card:hover{
+    transform: translateY(-10px);
+}
+
+
+/* contact css section ----------------------------------------------------- */
+.home6{
+    width:100%;
+    height:auto;
+    background-image: url('https://wallpaperaccess.com/full/1155021.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+.bg-dark{
+    background:linear-gradient(to bottom, #3f3f3f38, #000000);
+}
+.card2 .form-control{
+    background-color: transparent;
+    color:#fff;
+    font-size: 13px;
+    resize:none;
+    height: 50px;
+}
+.card2 .form-control:focus{
+    outline:1px solid #04a6f7;
+    border:none;
+}
+.card2 .form-control::placeholder{
+    color:#fff;
+}
+.card2 .map{
+    height: 270px;
+}
+.card2 .map iframe{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+.home6 .specimg{
+    width: 100%;
+    height: 430px;
+    background: #000;
+}
+.home6 .specimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+}
+.footericon i{
+    padding:4px 6px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #04a6f7,
+    0 0 5px #0099e6;
+    transition: 0.5s ease-out;
+}
+.footericon i:hover{
+    scale:0.9;
+    background-color: rgb(255, 255, 255);
+    color:#000;
+}
+
+/* contact css section ----------------------------------------------------- */
