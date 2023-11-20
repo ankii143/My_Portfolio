@@ -19,9 +19,6 @@
 .text-secondary1{
     color:var(--secondary);
 }
-.text-light1{
-    color:var(--white);
-}
 .text-justify{
     text-align: justify;
 }
@@ -37,9 +34,9 @@
     /* box-shadow: 0 0px 2px #04a6f7; */
 }
 .sticky{
-    position:fixed;
+    /* position:fixed;
     width: 100%;
-    top:0;
+    top:0; */
     transition: 0.5s ease-in;
     z-index: 100;
     background-color: #0e213f;
@@ -98,7 +95,7 @@
 /* home page section--------------------------------------------------------------------------------------- */
 .home1{
     width:100%;
-    height:120vh;
+    height:auto;
     background-image: url('https://getwallpapers.com/wallpaper/full/7/4/8/588859.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,20 +124,11 @@
     text-align: justify;
     font-size: 14px;
 }
-.middle {
-    width:500px;
-    height:400px;
-}
+
 .middle img{
-    width:100%;
+    width:100%; 
     /* opacity:0.7; */
     object-fit:cover;
-}
-.right{
-    position: absolute;
-    width:50px;
-    right:20px;
-    height: 80vh;
 }
 .right i{
     padding:3px 7px;
@@ -165,13 +153,7 @@
     padding-top: 80px;
 }
 
-.about1 ,
-.about {
-    position: relative;
-    width: 48%;
-    height: auto;
-    border-radius: 5px;
-}
+
 .aboutimg > img {
     width:100%;
     border-radius: 5px;
@@ -181,30 +163,23 @@
     0 0 5px #0099e6;
     background-color: #000;
 }
-.aboutimg .left_cards{
-    position: absolute;
-    width:500px;
-    height:70vh;
-    top:-22px;
-    left:-52px;
-    /* background: linear-gradient(to left, #0099e671, #fff); */
-}
-.aboutimg .left_cards .card1 {
+
+/* .aboutimg  .card1 {
     display: flex;
     justify-content: center;
     width:70px;
     height: 70px;
     border-radius: 3px;
     margin-top:10px;
-    /* background-color:#0000009b; */
-    background-color:#fff;
+    background-color:#0000009b;
+    background-color:#04a6f78a;
     box-shadow: 0 0 3px #04a6f7,
     0 0 3px #04a6f7,
     0 0 3px #04a6f7,
     0 0 3px #04a6f7,
     0 0 3px #04a6f7,
     0 0 3px #0099e6;
-}
+} */
 
 .aboutimg .left_cards .card1 img{
     width:100%;
@@ -247,10 +222,11 @@
     transition: 0.3s ease-out;
 }
 .skillcard img{
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height:auto;
     padding:10px;
     background:#ffffffc4;
+    object-fit: cover;
     
 }
 .skillcard .card:hover{
@@ -269,9 +245,18 @@
     background-attachment: fixed;
     padding-top: 80px;
 }
-.projectcard .card{
-    width:350px;
-    background-color: #000;
+.projectcard a:nth-child(2){
+    padding-bottom:0;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--darkblue);
+}
+.projectcard .carrd  img {
+    width: 100%;
+    height:200px;
+    object-fit: fill;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: rgba(60, 50, 205, 0.023);
     box-shadow: 0 0 3px #04a6f7,
     0 0 3px #04a6f7,
     0 0 3px #04a6f7,
@@ -279,37 +264,28 @@
     0 0 3px #04a6f7,
     0 0 3px #0099e6;
     transition: 0.2s ease-in;
-    border-radius: 12px;
 }
-.projectcard .card img {
-    position: relative;
-    height:200px;
-    object-fit: fill;
-    overflow: hidden;
-    border-radius: 12px;
-}
-.projectcard a:nth-child(2){
-    padding-bottom:0;
-    border-radius: 5px;
-    border-bottom: 2px solid var(--darkblue);
-}
-.projectcard .card .hoverinfo{
+
+.projectcard .carrd .hoverinfo{
     position: absolute;
     height:200px;
-    width:342px;
+    width:95%;
+    margin-left:-2px;
     background:  #0e213fea;
     z-index:1;
     scale: 0.5;
     opacity: 0;
     transition: 0.5s ease-in;
     border-radius: 12px;
+    overflow: hidden;
 }
-.projectcard .card:hover .hoverinfo{
+.projectcard .carrd:hover .hoverinfo{
     scale: 1;
     opacity: 1;
 }
-.projectcard .card:hover{
-    transform: translateY(-10px);
+.projectcard .carrd:hover{
+    transform: translateY(-13px);
+    transition: 0.5s ease-in;
 }
 
 
@@ -360,7 +336,7 @@
     opacity: 1;
 }
 .footericon i{
-    padding:4px 6px;
+    padding:2px 6px;
     color: #fff;
     border-radius: 50%;
     cursor: pointer;
@@ -371,7 +347,7 @@
     transition: 0.5s ease-out;
 }
 .footericon i:hover{
-    scale:0.9;
+    scale:0.8;
     background-color: rgb(255, 255, 255);
     color:#000;
 }
