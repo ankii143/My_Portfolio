@@ -20,3 +20,9 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+var addBg = document.querySelector(".navbar-toggler");
+  addBg.addEventListener('click', function () {
+    navbar.classList.add('sticky');
+  
+  });
